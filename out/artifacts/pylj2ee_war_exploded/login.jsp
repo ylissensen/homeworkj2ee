@@ -21,11 +21,11 @@
 
 <script language="JavaScript">
     function mylogin(){
-        if(isNull(form1.Username.value)){
+        if(isNull(form1.Iduser.value)){
             alert('<s:text name="alert1"/>');
             return false;
         }
-        else if(isNull(form1.Password.value)){
+        else if(isNull(form1.Userpwd.value)){
             alert('<s:text name="alert2"/>');
             return false;
         }else{
@@ -52,10 +52,10 @@
     <table>
         <div>
             <div style="left: 300px; position: absolute; top: 200px;"><s:text name="form.name"/>
-                <input type="text"  name="Username" id="Username" value="" />
+                <input type="text"  name="Iduser" id="Iduser" value="" />
             </div>
             <div style="left: 300px; position: absolute; top: 260px;"><s:text name="form.password"/>
-                <input type="password"  name="Password" id="Password" value=""/>
+                <input type="password"  name="Userpwd" id="Userpwd" value=""/>
             </div>
 
             <div style="left: 330px; position: absolute; top: 390px;font-max-size: 80px">
