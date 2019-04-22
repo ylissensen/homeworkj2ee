@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true"/>
+
+    <constant name="struts.custom.i18n.resources" value="message"/>
+    <!--package包作用是管理action
+    一个业务模块==用一个包
+    在struts中包一定要继承struts-default包(extends)
+    name  action处理方法返回值
+    -->
+    <package name="user" extends="struts-default">
+    <!-- name 别人访问该ACTION访问路径   class 存储的位置   method是 调用Action中的访问方法-->
+        <!-- 登录功能 -->
+    <action name="login" class="action.login">
+        <result name="success">/success.jsp</result>
+        <result name="input">/login.jsp</result>
+        <result name="error">/error.jsp</result>
+    </action>
+
+    </package>
+
+</struts>
